@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 export default function SearchByBody() {
   const bodyTypes = [
-    { title: "Hatchback", query: "Hatchback", image: "/assets/images/section/Hatchback.png" },
+    { title: "Hatchback", query: "Hatchback", image: "/assets/images/section/Hatch.png" },
     { title: "SUV", query: "SUV", image: "/assets/images/section/Suv.png" },
     { title: "Sedan", query: "Sedan", image: "/assets/images/section/Sedan.png" },
     { title: "Van", query: "Van", image: "/assets/images/section/Van.png" },
