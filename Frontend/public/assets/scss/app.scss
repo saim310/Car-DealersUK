@@ -1,0 +1,29 @@
+@forward './component/';
+@forward './abstracts/';
+@forward  './style.scss';
+@forward  './responsive.scss';
+
+
+/* ─── Replace dark hover overlay with light zoom ─── */
+
+/* Kill dark overlay */
+.box-car-list.hv-one .img-style::after,
+.box-car-list.hv-one .image-group::after,
+.box-car-list.hv-one .img-style::before,
+.box-car-list.hv-one .image-group::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Clip overflow so zoom stays inside the image box */
+.box-car-list.hv-one .img-style {
+  overflow: hidden !important;
+}
+
+/* Zoom only the image on hover */
+.box-car-list.hv-one .img-style img {
+  transition: transform 0.4s ease !important;
+}
+.box-car-list.hv-one:hover .img-style img {
+  transform: scale(1.06) !important;
+}

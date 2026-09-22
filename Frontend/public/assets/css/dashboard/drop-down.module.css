@@ -1,0 +1,4 @@
+.container:hover {
+    border-radius: 16px;
+  background-color: #ff7101; /* Light gray background on hover */
+}

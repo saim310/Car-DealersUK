@@ -1,0 +1,560 @@
+.adminContainer {
+  padding: 40px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.adminHeader h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.adminHeader p {
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.headerActions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.btnPrimary {
+  background-color: #ff6b00;
+  /* Matching your AutoDecar orange */
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Layout */
+.editorLayout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+}
+
+.mainEditor {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.editorSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebarCard {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.statusBadge {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.selectInput {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  font-size: 14px;
+  outline-color: #ff6b00;
+  cursor: pointer;
+}
+
+/* Image Upload Styling */
+.imageUploadWrapper {
+  margin-top: 5px;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.uploadPlaceholder:hover {
+  border-color: #ff6b00;
+  background: #fffaf5;
+}
+
+.uploadIcon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.uploadPlaceholder span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.uploadPlaceholder small {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.previewContainer {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.removeImgBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Custom Toggle Switch (Professional Style) */
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.checkboxText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* SEO Preview Styling */
+.seoPreviewBox {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.googleUrl {
+  font-size: 12px;
+  color: #202124;
+  display: block;
+}
+
+.googleTitle {
+  font-size: 16px;
+  color: #1a0dab;
+  margin: 4px 0;
+  font-weight: 400;
+}
+
+.googleDesc {
+  font-size: 13px;
+  color: #4d5156;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.slugWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.slugLabel {
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.slugCode {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.sidebarCard h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Inputs */
+.inputGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.titleInput {
+  font-size: 28px;
+  font-weight: 700;
+  border: none;
+  border-bottom: 2px solid #eee;
+  padding: 10px 0;
+  outline: none;
+}
+
+.titleInput:focus {
+  border-color: #ff6b00;
+}
+
+.excerptInput,
+.contentInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.contentInput {
+  min-height: 400px;
+}
+
+.imageUploadBox {
+  border: 2px dashed #ddd;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: #888;
+  cursor: pointer;
+}
+
+.seoHint {
+  font-size: 12px;
+  color: #0080ff;
+  word-break: break-all;
+}
+
+.fileHidden {
+  display: none;
+}
+
+.blogListSection {
+  margin-top: 30px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.blogListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.blogListHeader h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.blogListHeader span {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.blogListTableWrap {
+  overflow-x: auto;
+}
+
+.blogListTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blogListTable th,
+.blogListTable td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f0f1f3;
+  font-size: 14px;
+}
+
+.blogListTable th {
+  background: #f8fafc;
+  color: #111827;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rowActions {
+  display: flex;
+  gap: 8px;
+}
+
+.rowActions button {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rowActions button:hover {
+  border-color: #ff6b00;
+  color: #ff6b00;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 9px;
+}
+
+.badgePublished {
+  color: #0f766e;
+  background: #ccfbf1;
+}
+
+.badgeDraft {
+  color: #7c2d12;
+  background: #ffedd5;
+}
+
+.emptyState {
+  border: 1px dashed #d7dce2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .adminContainer {
+    padding: 28px;
+  }
+
+  .adminHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .headerActions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .headerActions button {
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .editorLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .mainEditor,
+  .sidebarCard,
+  .blogListSection {
+    padding: 24px;
+  }
+
+  .editorSidebar {
+    gap: 18px;
+  }
+
+  .blogListHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .adminContainer {
+    padding: 18px;
+  }
+
+  .adminHeader h1 {
+    font-size: 20px;
+  }
+
+  .adminHeader p {
+    font-size: 14px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .inputGroup {
+    margin-bottom: 16px;
+  }
+
+  .titleInput {
+    font-size: 22px;
+  }
+
+  .excerptInput,
+  .contentInput,
+  .selectInput {
+    font-size: 14px;
+  }
+
+  .contentInput {
+    min-height: 260px;
+  }
+
+  .uploadPlaceholder {
+    padding: 22px 12px;
+  }
+
+  .imagePreview {
+    height: 180px;
+  }
+
+  .rowActions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rowActions button {
+    width: 100%;
+  }
+
+  .blogListTable th,
+  .blogListTable td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .adminContainer {
+    padding: 14px;
+  }
+
+  .editorSidebar {
+    gap: 14px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .selectInput,
+  .titleInput,
+  .excerptInput,
+  .contentInput {
+    width: 100%;
+  }
+
+  .blogListHeader h2 {
+    font-size: 18px;
+  }
+
+  .blogListHeader span {
+    font-size: 12px;
+  }
+
+  .blogListTable th,
+  .blogListTable td {
+    padding: 8px 6px;
+  }
+}

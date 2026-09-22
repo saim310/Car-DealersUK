@@ -1,0 +1,129 @@
+.review-section {
+  background-color: #FF7101;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* Swiper Container Settings */
+.mySwiper {
+  width: 100%;
+  padding-bottom: 60px !important;
+  cursor: grab;
+}
+
+.mySwiper:active {
+  cursor: grabbing;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: left;
+  min-height: 250px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Gives shadow room to breathe */
+  user-select: none;
+}
+
+/* The Speech Bubble Triangle */
+.review-card::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 40px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+.thumbs-up {
+  display: flex;
+  align-items: center;
+  color: #28a745;
+  font-weight: bold;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.author {
+  font-weight: bold;
+  color: #888;
+  margin: 0;
+}
+
+.location {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.powered-by {
+  margin-top: 40px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.brand {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* Customizing Pagination Dots */
+.mySwiper :global(.swiper-pagination-bullet) {
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+    
+.mySwiper :global(.swiper-pagination-bullet-active) {
+  background: #ffffff !important;
+  width: 12px;
+  border-radius: 5px;
+} 
